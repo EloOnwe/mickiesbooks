@@ -31,7 +31,10 @@ const AddComp = ({ handleShowAdd }) => {
 
     try {
       setIsAdding(true);
-      const response = await axios.post("http://localhost:5000/book", formData);
+      const response = await axios.post(
+        "https://mickiesapp.onrender.com/book",
+        formData
+      );
       setIsAdding(false);
 
       toast.success(response.data.message, {

@@ -13,7 +13,7 @@ const Home = () => {
   const getBooks = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("http://localhost:5000/");
+      const response = await axios.get("https://mickiesapp.onrender.com/");
       setBooks(response.data);
       setLoading(false);
     } catch (error) {

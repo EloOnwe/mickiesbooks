@@ -24,7 +24,9 @@ const DetailPage = ({ token }) => {
     const getBook = async () => {
       try {
         setLoading(true);
-        const response = await axios.get("http://localhost:5000/book/" + id);
+        const response = await axios.get(
+          "https://mickiesapp.onrender.com/book/" + id
+        );
         setBook(response.data);
         setLoading(false);
       } catch (error) {
@@ -57,7 +59,7 @@ const DetailPage = ({ token }) => {
       try {
         setUpdating(true);
         const response = await axios.put(
-          "http://localhost:5000/book/update/" + id,
+          "https://mickiesapp.onrender.com/book/update/" + id,
           book
         );
         setUpdating(false);
@@ -86,7 +88,7 @@ const DetailPage = ({ token }) => {
     try {
       setIsDeleting(true);
       const response = await axios.delete(
-        "http://localhost:5000/book/delete/" + id
+        "https://mickiesapp.onrender.com/book/delete/" + id
       );
       setIsDeleting(false);
       if (token) {
