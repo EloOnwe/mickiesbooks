@@ -23,3 +23,12 @@
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+@media (max-width: 576px) {
+  .home .card-cont{
+    gap: 1.6rem;
+  }
+  }
