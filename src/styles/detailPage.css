@@ -137,3 +137,12 @@
 
   }
 
+
+
+  
+@media (max-width: 300px){
+    .info{
+        height: 70vh;
+        margin-bottom: 1rem;
+    }
+}
