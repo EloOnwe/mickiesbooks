@@ -1,0 +1,142 @@
+.navbar, nav{
+    width: 100%;
+    height: 100%;
+    z-index: 111;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 1rem;
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+.logo:hover{
+    cursor: pointer;
+    border-color: white;
+    border-radius: 5px;
+}
+
+.logo span{
+    font-size: 1.2rem;
+    font-family: "Arial black";
+    color: rgb(241, 187, 117);
+    font-style: italic;
+
+}
+
+.links{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.links ul{
+   display: flex;
+   list-style: none;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.links ul li{
+    padding: 0 1rem;
+    line-height: 7vh;
+    transition: all 0.3s;
+    border-radius: 6px;
+}
+
+.links ul li:hover{
+  background-color: rgba(247, 242, 242, 0.2);
+  
+
+}
+.links ul li a{
+    text-decoration: none;
+    color: rgb(241, 187, 117);
+}
+
+.ham-menu{
+    font-size: 23px;
+    display: none;
+    margin-right: 0.3rem;
+    cursor: pointer;
+}
+.mobile-links{
+    display: none;
+}
+
+.mobile-links{
+    display: none;
+    position: absolute;
+    top: 7.5vh;
+    background-color: black;
+    height: 60%;
+    width: 40%;
+}
+
+.mobile-links-show{
+    display: block;
+    position: absolute;
+    top: 8vh;
+    background-color: black;
+    height: 50vh;
+    width: 50%;
+    right: 0;
+}
+
+ .mobile-links-show ul{
+    list-style: none;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 5rem;
+}
+
+
+.mobile-links-show ul li a{
+    text-decoration: none;
+    color: white;
+    height: 100%;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .ham-menu{
+        display: block;
+        margin-right: 1.4rem;
+    }
+    .links{
+        display: none;
+    }
+   
+
+ 
+  }
+
+
+
+@media (max-width: 600px) {
+  .logo{
+    margin-left: 5px;
+  }
+
+  .mobile-links-show ul li{
+    margin-left: -4rem;
+
+  }
+  }

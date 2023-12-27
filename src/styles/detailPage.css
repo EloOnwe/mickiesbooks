@@ -1,0 +1,139 @@
+.detail{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    position: relative;
+   border: 1px solid;
+   text-align: center;
+   padding: 2rem;
+   width: 50%;
+   height: 60vh;
+   border-radius: 1.5rem;
+   margin-top: 9rem;
+}
+
+.info span{
+    color: red;
+    margin: 0 6px;
+}
+.info button{
+    margin: 6px;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+ .buttons >:first-child{
+    background-color: aquamarine;
+}
+
+.buttons > :nth-child(2){
+    background-color: red;
+}
+
+.form-container{
+    position: relative;
+}
+
+
+
+.update{
+    position: absolute;
+    width: 100%;
+    height: 84vh;
+    background-color: rgba(22, 21, 21, 0.9);
+}
+
+.delete-modal{
+    position: absolute;
+    width: 40%;
+    height: 20vh;
+    background-color: white;
+    top: 20vh;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.delete-modal p{
+    text-align: center;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.btns button{
+    width: 10rem;
+    height: 3rem;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+}
+#yes{
+    background-color: aquamarine;
+    color: black;
+}
+#no{
+    background-color: red;
+}
+
+.deleting, .updating{
+    position: absolute;
+    top: 20vh;
+    margin: 0 50%;
+    width: 20rem;
+    height: 20vh;
+    background-color: transparent;
+}
+
+
+
+
+
+@media (max-width: 576px) {
+    .form-container form{
+        margin-top: 3rem;
+        
+    }
+    .info{
+        width: 60%;
+    }
+    .info button{
+        height: 2.2rem;
+        width: 6rem;
+    }
+    .form-container{
+        margin-top: 1.2rem;
+        width: 80%;
+    }
+
+    .form-container form button{
+        height: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    .btns button{
+        height: 2rem;
+
+    }
+   
+    .update #times{
+     margin-right: -1rem;
+    }
+
+  }
+

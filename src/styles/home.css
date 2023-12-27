@@ -1,0 +1,25 @@
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+}
+
+.home .card-cont{
+    width: 100vw;
+    min-height: 80vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+    
+}
+
+.loading{
+    width: 100%;
+    min-height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,17 @@
+.about{
+
+    width: 100vw;
+    min-height: 86vh;
+    
+}
+
+.about h3{
+    text-align: center;
+}
+
+p{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
